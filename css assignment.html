@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+input[type=checkbox] {
+  accent-color: red;
+}
+
+input[type=radio] {
+  accent-color: green;
+}
+
+input[type=range] {
+  accent-color: rgb(0, 0, 255);
+}
+
+progress {
+  accent-color: hsl(39, 100%, 50%);
+}
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  animation-name: mymove;
+  animation-duration: 15s;
+}
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 200px;}
+}
+
+html {
+  font-size: small;
+  color: blue;
+}
+
+#ex1 {
+  background-color: yellow;
+  color: red;
+}
+
+#ex2 {
+  background-color: yellow;
+  color: red;
+  all: inherit;
+}
+
+#ex3 {
+  background-color: yellow;
+  color: red;
+  all: initial;
+}
+
+#ex4 {
+  background-color: yellow;
+  color: red;
+  all: unset;
+}
+h1 {
+  border: 5px solid red;
+}
+
+h2 {
+  border: 4px dotted blue;
+}
+
+div {
+  border: double;
+}
+
+body { 
+  background: lightblue url("tree.jpg") no-repeat fixed center; 
+}
+#example1 {
+  caption-side: bottom;
+}
+
+#example2 {
+  caption-side: top;
+}
+p {color: red;}
+
+p.ex1 {display: none;}
+p.ex2 {display: inline;}
+p.ex3 {display: block;}
+p.ex4 {display: inline-block;}
+
+img.a {
+  vertical-align: baseline;
+}
+
+img.b {
+  vertical-align: text-top;
+}
+
+img.c {
+  vertical-align: text-bottom;
+}
+
+img.d {
+  vertical-align: sub;
+}
+
+img.e {
+  vertical-align: super;
+}
+
+div {
+  border: 2px solid;
+  padding: 20px; 
+  width: 300px;
+  resize: both;
+  overflow: auto;
+}
+<h1>The resize Property</h1>
+
+<div>
+  <p>Let the user resize both the height and the width of this div element.</p>
+  <p>To resize: Click and drag the bottom right corner of this div element.</p>
+</div>
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 2s;
+}
+
+div:hover {
+  width: 300px;
+}
+
+.image {
+  height: 100px;
+  width: 100px;  
+  image-rendering: auto;
+}
+
+.crisp-edges {
+  image-rendering: -webkit-optimize-contrast; /* Chrome, Edge, Opera, and Safari */
+  image-rendering: crisp-edges;
+}
+
+.pixelated {
+  image-rendering: pixelated;
+}
+
+.smooth {
+  image-rendering: smooth;
+}
+
+.high-quality {
+  image-rendering: high-quality;
+} 
+
+
+img {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+}
+
+
+</style>
+</head>
+<body>
+
+<h1>The accent-color Property</h1>
+
+<h3>Accent color for checkboxes:</h3>
+<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" checked>
+<label for="vehicle1"> I have a bike</label><br>
+<input type="checkbox" id="vehicle2" name="vehicle2" value="Car" checked>
+<label for="vehicle2"> I have a car</label><br><br>
+
+<h3>Accent color for radiobuttons:</h3>
+<input type="radio" id="html" name="fav_language" value="HTML">
+<label for="html">HTML</label><br>
+<input type="radio" id="css" name="fav_language" value="CSS" checked>
+<label for="css">CSS</label><br>
+
+<h3>Accent color for a range field:</h3>
+<label for="vol">Volume:</label>
+<input type="range" id="vol" name="vol" min="0" max="50">
+
+<h3>Accent color for a progress element:</h3>
+<label for="file">Downloading progress:</label>
+<progress id="file" value="72" max="100"> 72% </progress>
+
+
+
+<h1>The animation-name Property</h1>
+
+<p>Specify a name for the @shahnawaz animation.</p>
+
+<div></div>
+
+<p><b>Note:</b> Always specify the animation-duration property. Otherwise the duration is 0, and the animation will not be played.</p>
+
+<p>No all property:</p>
+<div id="ex1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+
+<p>all: inherit:</p>
+<div id="ex2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+
+<p>all: initial:</p>
+<div id="ex3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+
+<p>all: unset:</p>
+<div id="ex4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+
+<h1>A heading with a solid red border</h1>
+
+<h2>A heading with a dotted blue border</h2>
+
+<div>A div element with a double border.</div>
+
+<h1>The background Property</h1>
+
+<p>This is some text</p>
+<p>This is some text</p>
+<p>This is some text</p>
+<p>This is some text</p>
+<p>This is some text</p>
+<p>This is some text</p>
+<p>This is some text</p>
+<p>This is some text</p>
+<p>This is some text</p>
+<p>This is some text</p>
+<p>This is some text</p>
+<p>This is some text</p>
+<p>This is some text</p>
+<p>This is some text</p>
+<p>This is some text</p>
+<p>This is some text</p>
+<p>This is some text</p>
+<p>This is some text</p>
+<p>This is some text</p>
+<p>This is some text</p>
+<p>This is some text</p>
+<p>This is some text</p>
+<p>This is some text</p>
+<p>This is some text</p>
+<h1>The caption-side Property</h1>
+<p>The caption-side property specifies the placement of a table caption:</p>
+
+<h2>caption-side: bottom:</h2>
+<table id="example1" border="1">
+<caption>Table 1.1 Customers</caption>
+<tr>
+  <th>Company</th>
+  <th>Contact</th>
+  <th>Country</th>
+</tr>
+<tr>
+  <td>Alfreds Futterkiste</td>
+  <td>Maria Anders</td>
+  <td>Germany</td>
+</tr>
+<tr>
+  <td>Berglunds snabbköp</td>
+  <td>Christina Berglund</td>
+  <td>Sweden</td>
+</tr>
+<tr>
+  <td>Centro comercial Moctezuma</td>
+  <td>Francisco Chang</td>
+  <td>Mexico</td>
+</tr>
+<tr>
+  <td>Ernst Handel</td>
+  <td>Roland Mendel</td>
+  <td>Austria</td>
+</tr>
+</table>
+
+<h2>caption-side: top (default):</h2>
+<table id="example2" border="1">
+<caption>Table 1.1 Customers</caption>
+<tr>
+  <th>Company</th>
+  <th>Contact</th>
+  <th>Country</th>
+</tr>
+<tr>
+  <td>Alfreds Futterkiste</td>
+  <td>Maria Anders</td>
+  <td>Germany</td>
+</tr>
+<tr>
+  <td>Berglunds snabbköp</td>
+  <td>Christina Berglund</td>
+  <td>Sweden</td>
+</tr>
+<tr>
+  <td>Centro comercial Moctezuma</td>
+  <td>Francisco Chang</td>
+  <td>Mexico</td>
+</tr>
+<tr>
+  <td>Ernst Handel</td>
+  <td>Roland Mendel</td>
+  <td>Austria</td>
+</tr>
+</table>
+<h1>The display Property</h1>
+
+<h2>display: none:</h2>
+<div>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. <p class="ex1">HELLO WORLD!</p> Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.
+</div>
+
+<h2>display: inline:</h2>
+<div>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. <p class="ex2">HELLO WORLD!</p> Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.
+</div>
+
+<h2>display: block:</h2>
+<div>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. <p class="ex3">HELLO WORLD!</p> Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.
+</div>
+
+<h2>display: inline-block:</h2>
+<div>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. <p class="ex4">HELLO WORLD!</p> Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.
+</div>
+
+<h1>The vertical-align Property</h1>
+
+<h2>vertical-align: baseline (default):</h2>
+<p>An <img class="a" src="sqpurple.gif" width="9" height="9"> image with a default alignment.</p> 
+
+<h2>vertical-align: text-top:</h2>
+<p>An <img class="b" src="sqpurple.gif" width="9" height="9"> image with a text-top alignment.</p> 
+
+<h2>vertical-align: text-bottom:</h2>
+<p>An <img class="c" src="sqpurple.gif" width="9" height="9"> image with a text-bottom alignment.</p>
+
+<h2>vertical-align: sub:</h2>
+<p>An <img class="d" src="sqpurple.gif" width="9" height="9"> image with a sub alignment.</p> 
+
+<h2>vertical-align: sup:</h2>
+<p>An <img class="e" src="sqpurple.gif" width="9" height="9"> image with a super alignment.</p>
+
+<h1>The resize Property</h1>
+
+<div>
+  <p>Let the user resize both the height and the width of this div element.</p>
+  <p>To resize: Click and drag the bottom right corner of this div element.</p>
+</div>
+
+
+<h1>Smooth Scroll</h1>
+
+<div class="main" id="section1">
+  <h2>Section 1</h2>
+  <p>Click on the link to see the "smooth" scrolling effect.</p>
+  <a href="#section2">Click Me to Smooth Scroll to Section 2 Below</a>
+  <p>Note: Remove the scroll-behavior property to remove smooth scrolling.</p>
+</div>
+
+<div class="main" id="section2">
+  <h2>Section 2</h2>
+  <a href="#section1">Click Me to Smooth Scroll to Section 1 Above</a>
+</div>
+
+<p><strong>Note:</strong> The scroll-behavior property is not supported in Internet Explorer.</p>
+
+<h1>The transition Property</h1>
+
+<p>Hover over the div element below, to see the transition effect:</p>
+
+<h1>The image-rendering Property</h1>
+
+<p>image-rendering: auto;</p>
+<img class="image" src="smiley.gif" alt="Smiley" width="32" height="32">
+
+<p>image-rendering: crisp-edges;</p>
+<img class="image crisp-edges" src="smiley.gif" alt="Smiley" width="32" height="32">
+
+<p>image-rendering: pixelated;</p>
+<img class="image pixelated" src="smiley.gif" alt="Smiley" width="32" height="32">
+
+<p>image-rendering: smooth;</p>
+<img class="image smooth" src="smiley.gif" alt="Smiley" width="32" height="32">
+
+<p>image-rendering: high-quality;</p>
+<img class="image high-quality" src="smiley.gif" alt="Smiley" width="32" height="32">
+
+<p>Original image: <img src="smiley.gif" alt="Smiley" width="32" height="32"></p>
+
+<h1>The z-index Property</h1>
+
+<img src="tree.gif" width="100" height="140">
+
+<p>Because the image has a z-index of -1, it will be placed behind the heading.</p>
+
+</body> 
+<div></div>
+</body>
+</html>
